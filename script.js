@@ -30,6 +30,8 @@ function dragLeave(e){
 }
 
 
-function drop(){
-    console.log('LIBEROU');
+function drop(e){
+    e.currentTarget.classList.remove('hover');
+
+    
 }
