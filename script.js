@@ -22,14 +22,14 @@ function dragEnd(e){
 
 function dragOver(e){
     e.preventDefault();
-    //console.log('Passou Por cima')
+    e.currentTarget.classList.add('hover');
 }
 
-function dragLeave(){
-    //console.log('Saiu da area Dropavel')
+function dragLeave(e){
+    e.currentTarget.classList.remove('hover');
 }
 
 
 function drop(){
-    console.log('LIBEROU')
+    console.log('LIBEROU');
 }
